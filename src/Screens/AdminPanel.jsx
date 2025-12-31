@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
+import { addItem, getItems } from '../Services/itemService';
 
 const MAX_ITEMS = 8;
 
@@ -12,8 +13,7 @@ const AdminPanel = () => {
   });
 
   useEffect(() => {
-    fetch('/api/items')
-      .then((res) => res.json())
+    getItems()
       .then((data) => setItems(data))
       .catch((err) => console.error('Error fetching items:', err));
   }, []);

@@ -1,5 +1,5 @@
 // Switch this to true when you have set up your firebase keys
-const USE_FIREBASE = false;
+const USE_FIREBASE = true;
 
 import { db } from '../firebase';
 import { collection, addDoc, getDocs } from 'firebase/firestore';

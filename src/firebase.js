@@ -5,13 +5,15 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // REPLACE THESE WITH YOUR OWN KEYS FROM FIREBASE CONSOLE
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyBDmEndp2NsaB_Ly_zjDHRbQwP8lzb1Oi8",
+  authDomain: "registation-form-f5fa4.firebaseapp.com",
+  projectId: "registation-form-f5fa4",
+  storageBucket: "registation-form-f5fa4.firebasestorage.app",
+  messagingSenderId: "719081363223",
+  appId: "1:719081363223:web:416914f3096894efa00952",
+  measurementId: "G-X65YL151DF"
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
