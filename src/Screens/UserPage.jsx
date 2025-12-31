@@ -7,7 +7,11 @@ const UserPage = () => {
   useEffect(() => {
     getItems()
       .then((data) => setItems(data))
-      .catch((err) => console.error('Error fetching items:', err));
+      .catch((err) => {
+        console.error('Error fetching items:', err);
+        // Optional: show error to user if needed
+        // toast.error('Could not load items');
+      });
   }, []);
 
   return (
